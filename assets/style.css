@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: semplicitapro, sans-serif;
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+.header{
+    padding: 20px 30px;
+    background-image: url(./images/nattu-adnan-Ai2TRdvI6gM-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.header h1 a{
+    color: wheat;
+}
+
+span{
+    font-weight: 600;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    padding: 15px 10px;
+    list-style-type: none;
+    
+}
+
+.nav ul li a{
+    color: wheat;
+}
+
+/* hero */
+
+.hero{
+    background-image: url(./images/nattu-adnan-Ai2TRdvI6gM-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero p{
+    font-size: 38px;
+    font-style: italic;
+    padding: 30px 35px;
+    
+}
+/* about me section */
+.about-me{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-me img{
+    width: 300px;
+    height: 300px;
+    padding: 15px
+
+}
+/* my work section */
+
+/* contact me section */
