@@ -232,10 +232,14 @@ span{
         width: 70%;
     }
 
+    .example2, .example3{
+        width: 42%;
+    }
+
     .contact-me{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
     }
@@ -245,20 +249,22 @@ span{
         text-align: right;
         flex: 0 0 20%;
     }
-    .contact-me ul{
-        
+    .contact-me ul{  
         align-content: center;
-        margin-right: 15%;
+       
     }
     .contact-me ul li{
         padding: 10px 30px;
     }
 
-    
-
 }
 
-/* media query min 1201px */
-@media screen and (min-width: 1201px){
-
+/* media query for min 1300px */
+@media screen and (min-width: 1300px){
+    .example2, .example3{
+        width: 45%;
+    }
+    .contact-me ul{ 
+        margin-right: 10%;
+    }
 }
