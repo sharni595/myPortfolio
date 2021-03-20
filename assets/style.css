@@ -118,13 +118,24 @@ span{
     color: rgb(210, 105, 30);
 }
 
-.my-work article p:hover{
-    color: rgb(240, 248, 255);
+.my-work article:hover{
     background: rgb(176, 196, 222);
 }
+.my-work article img:hover{
+    opacity: 0.6;
+}
+.my-work article a:hover{
+    color: rgb(240, 248, 255)
+}
+
 /* contact me section */
+.contact-me h2{
+    margin: 30px;
+}
+
 .contact-me ul li{
     list-style-type: none;
+    padding: 6px;
 }
 
 .contact-me ul li a{
@@ -139,7 +150,23 @@ span{
 
 /* media query min 769px */
 @media screen and (min-width: 769px){
+    .my-work div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .my-work div .example1{
+        width: 900%;
+    }
+    .example2, .example3{
+        width: 44.5%;
+    }
+    .contact-me ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
+    }
 }
 
 /* media query min 1025px */
