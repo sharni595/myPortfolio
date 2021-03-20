@@ -6,11 +6,26 @@
 
 body{
     font-family: semplicitapro, sans-serif;
-    color: wheat;
+    color: rgb(210, 105, 30);
+    text-align: center;
 }
 
 a{
     text-decoration: none;
+}
+
+.main section{
+    margin: 40px 20px;
+}
+
+hr {
+    width: 90%;
+    height: 3px;
+    background-color:rgb(210, 105, 30);
+    margin: auto;
+    border: none;
+
+    
 }
 
 /* header */
@@ -27,7 +42,7 @@ a{
 }
 
 .header h1 a{
-    color: wheat;
+    color: rgb(210, 105, 30);
 }
 
 span{
@@ -48,9 +63,12 @@ span{
 }
 
 .nav ul li a{
-    color: wheat;
+    color: rgb(210, 105, 30);
 }
-
+.nav ul li a:hover{
+    border-bottom: 2px solid rgb(210, 105, 30);
+    top: -2px;
+}
 /* hero */
 
 .hero{
@@ -73,10 +91,6 @@ span{
     
 }
 /* about me section */
-.about-me{
-    text-align: center;
-    padding: 40px 20px;
-}
 
 .about-me img{
     width: 300px;
@@ -85,5 +99,43 @@ span{
 
 }
 /* my work section */
+.my-work div{
+    padding: 30px 15px;
+    
+}
 
+.my-work div p{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.my-work div img{
+    width: 100%;
+}
+
+.my-work div a{
+    color: rgb(210, 105, 30);
+}
+
+.my-work div p:hover{
+    display: inline-block;
+    border-bottom: 2px solid rgb(210, 105, 30);
+}
 /* contact me section */
+
+
+/* media query min 769px */
+@media screen and (min-width: 769px){
+
+}
+
+/* media query min 1025px */
+@media screen and (min-width: 1025px){
+
+}
+
+/* media query min 1201px */
+@media screen and (min-width: 1201px){
+
+}
