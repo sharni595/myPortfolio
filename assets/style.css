@@ -92,7 +92,7 @@ span{
 }
 /* about me section */
 
-.about-me img{
+.about-me div img{
     width: 60%;
     padding: 15px
 
@@ -159,18 +159,102 @@ span{
         width: 900%;
     }
     .example2, .example3{
+        padding: 0 auto;
         width: 44.5%;
     }
     .contact-me ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     }
 }
 
 /* media query min 1025px */
 @media screen and (min-width: 1025px){
+   hr{
+       display: none;
+   }
+   
+    .header{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   
+   .hero{
+       display: flex;
+       justify-content: flex-end;
+       align-items: flex-end;
+       flex-wrap: wrap;
+   }
+
+    .about-me{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about-me > h2{
+        padding-right: 15px;
+        border-right: 5px solid rgb(210, 105, 30);
+        text-align: right;
+        flex: 0 0 20%;
+    }
+    .about-me div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        align-items: center;
+    }
+    .about-me div img{
+        width: 40%;
+    }
+    .about-me div p{
+        width: 40%;  
+    }
+
+    .my-work{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    
+    }
+    .my-work > h2{
+        padding-right: 15px;
+        border-right: 5px solid rgb(210, 105, 30);
+        text-align: right;
+        flex: 0 0 20%;
+    }
+    .my-work > div{
+        width: 70%;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .contact-me > h2{
+        padding-right: 15px;
+        border-right: 5px solid rgb(210, 105, 30);
+        text-align: right;
+        flex: 0 0 20%;
+    }
+    .contact-me ul{
+        
+        align-content: center;
+        margin-right: 15%;
+    }
+    .contact-me ul li{
+        padding: 10px 30px;
+    }
+
+    
 
 }
 
