@@ -93,36 +93,48 @@ span{
 /* about me section */
 
 .about-me img{
-    width: 300px;
-    height: 300px;
+    width: 60%;
     padding: 15px
 
 }
 /* my work section */
-.my-work div{
-    padding: 30px 15px;
-    
+.example1, .example2, .example3{
+    margin: 20px;
+    background: rgb(240, 248, 255);
+    border: 2px solid rgb(176, 196, 222)
 }
 
-.my-work div p{
+.my-work article p{
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+    padding: 15px;
 }
 
-.my-work div img{
+.my-work article img{
     width: 100%;
 }
 
-.my-work div a{
+.my-work article a{
     color: rgb(210, 105, 30);
 }
 
-.my-work div p:hover{
-    display: inline-block;
-    border-bottom: 2px solid rgb(210, 105, 30);
+.my-work article p:hover{
+    color: rgb(240, 248, 255);
+    background: rgb(176, 196, 222);
 }
 /* contact me section */
+.contact-me ul li{
+    list-style-type: none;
+}
+
+.contact-me ul li a{
+    color: rgb(210, 105, 30);
+}
+
+.contact-me ul li a:hover{
+    color: rgb(240, 248, 255);
+    background: rgb(176, 196, 222);
+}
 
 
 /* media query min 769px */
