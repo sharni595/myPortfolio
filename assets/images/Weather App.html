@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    
+<link rel="stylesheet" href="./Weather App_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="./Weather App_files/style.css"></head>
+<body>
+    
+    <header>
+       <h1>Weather Dashboard</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+        <!-- side section for inputting city name and viewing search history -->
+        <section class="col-3">
+            <div class="card">
+                <label for="city" class="card-title title-card">Search For a City:</label>
+                <input name="city" id="city-name" type="text" class="form-control control-form">
+                <button id="search-button" class="btn btn-info">Search</button>
+            </div>
+            <hr>
+            <div class="">
+                <ul id="search-history" class="list-group"><li class="flex-row justify-space-between align-center search-list">Farr West</li></ul>
+            </div>
+        </section>
+        <!-- main section that displays current and future weather -->
+        <section class="col-9 view-weather">
+            <div id="todays-weather">
+                <h2 id="city-today" style="float: left;">Farr West(04/19/2021)</h2>
+                <img id="icon" src="./Weather App_files/01d.png">
+                <hr>
+                <ul id="conditions">
+                    <li>
+                        Temperature: <span id="temperature">41</span>°
+                    </li>
+                    <li>
+                        Wind: <span id="wind">19.57</span> mph
+                    </li>
+                    <li>
+                        Humidity: <span id="humidity">52.7</span>%
+                    </li>
+                    <li>
+                        UV Index: <span id="uv-index" style="background-color:orange;">6.74</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="future-forecast" class="row">
+                <div class="card col-2 future-day">
+                    <h6 class="future-date" style="float: left;">(04/20/2021)</h6>
+                    <img class="future-icon" src="./Weather App_files/02d@2x.png">
+                    <hr>
+                    <ul>
+                        <li>Temp: 48.04°</li>
+                        <li>Wind: 4.12 mph</li>
+                        <li>Humidity: 32%</li>
+                    </ul>
+                </div>
+                
+                <div class="card col-2 future-day">
+                    <h6 class="future-date" style="float: left;">(04/21/2021)</h6>
+                    <img class="future-icon" src="./Weather App_files/04d@2x.png">
+                    <hr>
+                    <ul>
+                        <li>Temp: 52.65°</li>
+                        <li>Wind: 6.98 mph</li>
+                        <li>Humidity: 30%</li>
+                    </ul>
+                </div>
+                
+                <div class="card col-2 future-day">
+                    <h6 class="future-date" style="float: left;">(04/22/2021)</h6>
+                    <img class="future-icon" src="./Weather App_files/01d@2x.png">
+                    <hr>
+                    <ul>
+                        <li>Temp: 55.4°</li>
+                        <li>Wind: 6.91 mph</li>
+                        <li>Humidity: 30%</li>
+                    </ul>
+                </div>
+                
+                <div class="card col-2 future-day">
+                    <h6 class="future-date" style="float: left;">(04/23/2021)</h6>
+                    <img class="future-icon" src="./Weather App_files/10d@2x.png">
+                    <hr>
+                    <ul>
+                        <li>Temp: 55.6°</li>
+                        <li>Wind: 7.99 mph</li>
+                        <li>Humidity: 37%</li>
+                    </ul>
+                </div>
+                
+                <div class="card col-2 future-day">
+                    <h6 class="future-date" style="float: left;">(04/24/2021)</h6>
+                    <img class="future-icon" src="./Weather App_files/04d@2x.png">
+                    <hr>
+                    <ul>
+                        <li>Temp: 62.91°</li>
+                        <li>Wind: 12.33 mph</li>
+                        <li>Humidity: 26%</li>
+                    </ul>
+                </div>
+                </div>
+
+        </section>
+        </div>
+    </main>
+    <script src="./Weather App_files/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="./Weather App_files/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./Weather App_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
